@@ -1,0 +1,125 @@
+.header {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.menuItem {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menuItem:hover {
+  color: #4CAF50;
+}
+
+.mobileMenuButton {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+
+.menuIcon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.menuIcon::before,
+.menuIcon::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  transition: transform 0.3s ease;
+}
+
+.menuIcon::before {
+  transform: translateY(-8px);
+}
+
+.menuIcon::after {
+  transform: translateY(8px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    flex-direction: column;
+    padding: 5rem 2rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .menu.active {
+    display: flex;
+    transform: translateX(0);
+  }
+
+  .mobileMenuButton {
+    display: block;
+  }
+
+  .menuItem {
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+  }
+
+  /* Animação do ícone do menu */
+  .mobileMenuButton[aria-expanded="true"] .menuIcon {
+    background-color: transparent;
+  }
+
+  .mobileMenuButton[aria-expanded="true"] .menuIcon::before {
+    transform: rotate(45deg);
+  }
+
+  .mobileMenuButton[aria-expanded="true"] .menuIcon::after {
+    transform: rotate(-45deg);
+  }
+} 

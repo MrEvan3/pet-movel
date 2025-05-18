@@ -1,0 +1,93 @@
+.newsletter {
+  background-color: #4CAF50;
+  color: white;
+  padding: 4rem 1rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.form {
+  display: flex;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.inputGroup {
+  flex: 1;
+  text-align: left;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.input:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+.button {
+  background-color: white;
+  color: #4CAF50;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-end;
+}
+
+.button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .newsletter {
+    padding: 3rem 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+} 
