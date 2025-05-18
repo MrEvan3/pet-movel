@@ -29,6 +29,7 @@ export default function Newsletter() {
         justifyContent: 'space-between',
         padding: '48px 40px',
         gap: '32px',
+        flexWrap: 'wrap',
       }}>
         {/* Texto à esquerda */}
         <div style={{ flex: 1, minWidth: '320px', maxWidth: '520px' }}>
@@ -76,8 +77,10 @@ export default function Newsletter() {
               </li>
             ))}
           </ul>
-          <form onSubmit={handleSubmit} style={{ display: 'flex', alignItems: 'center', gap: '0', marginTop: '12px' }}>
+          <form onSubmit={handleSubmit} style={{ display: 'flex', alignItems: 'center', gap: '0', marginTop: '12px', flexWrap: 'wrap' }}>
+            <label htmlFor="newsletter-email" style={{ display: 'none' }}>E-mail</label>
             <input
+              id="newsletter-email"
               type="email"
               placeholder="Insira o seu e-mail..."
               required
@@ -90,6 +93,7 @@ export default function Newsletter() {
                 fontSize: '1rem',
                 fontFamily: 'Open Sans, sans-serif',
                 outline: 'none',
+                minWidth: '180px',
               }}
             />
             <button type="submit" style={{
@@ -106,6 +110,8 @@ export default function Newsletter() {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
+              outline: '2px solid #2d2fa3',
+              outlineOffset: '2px',
             }}>
               <span style={{ fontSize: '1.3rem', marginRight: '4px' }}>➔</span>
             </button>
@@ -113,7 +119,7 @@ export default function Newsletter() {
         </div>
         {/* Ilustração à direita */}
         <div style={{ flex: 1, minWidth: '260px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <Image src="/assets/cao.png" alt="Ilustração cachorro" width={320} height={260} />
+          <Image src="/assets/cao.png" alt="Ilustração de um cachorro feliz representando pets atendidos" width={320} height={260} style={{ maxWidth: '100%', height: 'auto' }} />
         </div>
       </div>
     </section>

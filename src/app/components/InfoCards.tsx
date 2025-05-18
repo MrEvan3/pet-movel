@@ -13,7 +13,7 @@ export default function InfoCards() {
         width: '100%',
       }}>
         {/* Card do ônibus */}
-        <div style={{
+        <article style={{
           background: '#fff',
           borderRadius: '18px',
           display: 'flex',
@@ -24,8 +24,9 @@ export default function InfoCards() {
           boxShadow: '0 2px 12px rgba(45,47,163,0.08)',
           width: '100%',
           margin: '32px auto 0 auto',
+          flexWrap: 'wrap', // Responsividade
         }}>
-          <div style={{ flex: 1, minWidth: '320px', maxWidth: '520px' }}>
+          <div style={{ flex: 1, minWidth: '260px', maxWidth: '520px' }}>
             <h3 style={{
               color: '#222',
               fontFamily: 'Paytone One, sans-serif',
@@ -55,16 +56,18 @@ export default function InfoCards() {
               fontWeight: 700,
               fontSize: '1rem',
               cursor: 'pointer',
+              outline: '2px solid #2d2fa3',
+              outlineOffset: '2px',
             }}>
               Saiba Mais
             </button>
           </div>
-          <div style={{ flex: 1, minWidth: '260px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <Image src="/assets/onibus.png" alt="Ônibus" width={420} height={200} style={{ borderRadius: '12px' }} />
+          <div style={{ flex: 1, minWidth: '220px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Image src="/assets/onibus.png" alt="Ônibus ilustrativo do projeto Pet Móvel" width={420} height={200} style={{ borderRadius: '12px', maxWidth: '100%', height: 'auto' }} />
           </div>
-        </div>
+        </article>
         {/* Card do gato */}
-        <div style={{
+        <article style={{
           background: '#fff',
           borderRadius: '18px',
           display: 'flex',
@@ -73,6 +76,7 @@ export default function InfoCards() {
           padding: '32px 32px 32px 32px',
           gap: '32px',
           boxShadow: '0 2px 12px rgba(45,47,163,0.08)',
+          flexWrap: 'wrap', // Responsividade
         }}>
           <div style={{ flex: 1, minWidth: '220px' }}>
             <h3 style={{
@@ -104,14 +108,16 @@ export default function InfoCards() {
               fontWeight: 700,
               fontSize: '1rem',
               cursor: 'pointer',
+              outline: '2px solid #2d2fa3',
+              outlineOffset: '2px',
             }}>
               Saiba Mais
             </button>
           </div>
           <div style={{ flex: 1, minWidth: '220px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <Image src="/assets/gato.png" alt="Ilustração gato" width={400} height={240} />
+            <Image src="/assets/gato.png" alt="Ilustração de um gato representando pets atendidos" width={400} height={240} style={{ maxWidth: '100%', height: 'auto' }} />
           </div>
-        </div>
+        </article>
       </div>
     </section>
   );

@@ -57,7 +57,7 @@ export default function Services() {
           gap: '28px',
         }}>
           {cards.map((card, idx) => (
-            <div key={idx} style={{
+            <article key={idx} style={{
               background: '#fff',
               borderRadius: '16px',
               boxShadow: '0 2px 12px rgba(45,47,163,0.08)',
@@ -71,12 +71,14 @@ export default function Services() {
             }}>
               <Image 
                 src={card.icon} 
-                alt={card.title} 
+                alt={`Ícone representando o serviço de ${card.title.toLowerCase()}`} 
                 width={48} 
                 height={48} 
                 style={{ 
                   marginBottom: '18px',
-                  filter: 'drop-shadow(0 0 12px rgba(255, 199, 44, 0.8))'
+                  filter: 'drop-shadow(0 0 12px rgba(255, 199, 44, 0.8))',
+                  maxWidth: '100%',
+                  height: 'auto',
                 }} 
               />
               <h3 style={{
@@ -95,7 +97,7 @@ export default function Services() {
                 textAlign: 'center',
                 lineHeight: 1.5,
               }}>{card.text}</p>
-            </div>
+            </article>
           ))}
         </div>
       </div>

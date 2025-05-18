@@ -13,7 +13,7 @@ export default function Footer() {
       }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'flex-start', gap: '32px' }}>
           {/* Logo e contato */}
-          <div style={{ minWidth: '260px', flex: 1 }}>
+          <div style={{ minWidth: '220px', flex: 1 }}>
             <div style={{ marginBottom: '18px' }}>
               <span style={{
                 fontFamily: 'Paytone One, sans-serif',
@@ -36,6 +36,8 @@ export default function Footer() {
                 fontSize: '1rem',
                 cursor: 'pointer',
                 marginBottom: '8px',
+                outline: '2px solid #2d2fa3',
+                outlineOffset: '2px',
               }}>
                 Entre em contato:
               </button>
@@ -51,39 +53,37 @@ export default function Footer() {
             </div>
           </div>
           {/* Menu */}
-          <div style={{ minWidth: '260px', flex: 2, display: 'flex', flexDirection: 'column', gap: '12px' }}>
-            <nav style={{ marginBottom: '12px' }}>
-              <ul style={{
-                display: 'flex',
-                flexWrap: 'wrap',
-                gap: '32px',
-                listStyle: 'none',
-                padding: 0,
-                margin: 0,
-                fontFamily: 'Open Sans, sans-serif',
-                fontSize: '1rem',
-                color: '#222',
-              }}>
-                <li><Link href="/">Página Inicial</Link></li>
-                <li><Link href="/sobre">Sobre</Link></li>
-                <li><Link href="/localizacao">Localização</Link></li>
-                <li><Link href="/relatorio">Relatório de Atividades</Link></li>
-                <li><Link href="/denuncias">Denúncias</Link></li>
-              </ul>
-            </nav>
-          </div>
+          <nav aria-label="Links do rodapé" style={{ minWidth: '220px', flex: 2, display: 'flex', flexDirection: 'column', gap: '12px' }}>
+            <ul style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: '32px',
+              listStyle: 'none',
+              padding: 0,
+              margin: 0,
+              fontFamily: 'Open Sans, sans-serif',
+              fontSize: '1rem',
+              color: '#222',
+            }}>
+              <li><Link href="/">Página Inicial</Link></li>
+              <li><Link href="/sobre">Sobre</Link></li>
+              <li><Link href="/localizacao">Localização</Link></li>
+              <li><Link href="/relatorio">Relatório de Atividades</Link></li>
+              <li><Link href="/denuncias">Denúncias</Link></li>
+            </ul>
+          </nav>
         </div>
         {/* Copyright e políticas */}
         <div style={{ borderTop: '1px solid #e0e0e0', paddingTop: '24px', marginTop: '12px', display: 'flex', flexDirection: 'column', gap: '8px', fontFamily: 'Open Sans, sans-serif', fontSize: '0.95rem', color: '#888', textAlign: 'center' }}>
           <div style={{ color: '#222' }}>
             © 2025 Evandro Lemos. Todo os direitos reservados.
           </div>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '18px', justifyContent: 'center' }}>
-            <span>Política de Privacidade</span>
-            <span>Política de Cookies</span>
-            <span>Política de Privacidade</span>
-            <span>Política de Cookies</span>
-          </div>
+          <nav aria-label="Políticas do site">
+            <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '18px', justifyContent: 'center', listStyle: 'none', padding: 0, margin: 0 }}>
+              <li><a href="#" style={{ color: '#2d2fa3', textDecoration: 'underline', outline: '2px solid #2d2fa3', outlineOffset: '2px' }}>Política de Privacidade</a></li>
+              <li><a href="#" style={{ color: '#2d2fa3', textDecoration: 'underline', outline: '2px solid #2d2fa3', outlineOffset: '2px' }}>Política de Cookies</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </footer>
