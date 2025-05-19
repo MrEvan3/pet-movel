@@ -32,40 +32,6 @@ Escolhi o **Next.js** porque é um dos frameworks mais modernos e completos para
    O site estará disponível em [http://localhost:4000](http://localhost:4000).
 
 ---
-
-<<<<<<< HEAD
-=======
-## Como publicar no GitHub
-
-1. **Inicie o repositório git (se ainda não fez):**
-   ```sh
-   git init
-   git add .
-   git commit -m "Primeira versão do Pet Móvel"
-   ```
-
-2. **Crie um repositório no GitHub:**
-   - Acesse [GitHub](https://github.com)
-   - Clique em "New repository"
-   - Dê um nome ao repositório (ex: "pet-movel")
-   - Não inicialize com README, .gitignore ou licença
-   - Clique em "Create repository"
-
-3. **Conecte o repositório local ao remoto:**
-   ```sh
-   git remote add origin https://github.com/MrEvan3/pet-movel.git
-   git branch -M main
-   git push -u origin main
-   ```
-
-4. **Para atualizações futuras:**
-   ```sh
-   git add .
-   git commit -m "Descrição das alterações"
-   git push origin main
-   ```
-
----
 >>>>>>> 4c17c9f (Primeira versão do Pet Móvel)
 
 ## Principais decisões de código
