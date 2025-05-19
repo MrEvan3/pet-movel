@@ -109,24 +109,4 @@ git clone https://github.com/MrEvan3/pet-movel.git
 > **Pré-requisitos:**
 > - Ter o [Node.js](https://nodejs.org/) e o npm instalados na máquina.
 > - Seguir os comandos indicados para clonar, instalar as dependências e rodar o servidor de desenvolvimento.
-<<<<<<< HEAD
-=======
 
-## Remover submódulo git inválido
-```bash
-git submodule deinit -f pet-movel
-git rm -f pet-movel
-rm -rf .git/modules/pet-movel
-```
-
-## Remover arquivo .gitmodules
-```bash
-rm .gitmodules
-```
-
-## Adicionar e commitar alterações
-```bash
-git add .
-git commit -m "Removendo submódulo git inválido"
-git push origin main
->>>>>>> 4c17c9f (Primeira versão do Pet Móvel)
