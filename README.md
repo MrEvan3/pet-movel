@@ -33,75 +33,6 @@ Escolhi o **Next.js** porque é um dos frameworks mais modernos e completos para
 
 ---
 
-## Como publicar no GitHub
-
-1. **Inicie o repositório git (se ainda não fez):**
-   ```sh
-   git init
-   git add .
-   git commit -m "Primeira versão do Pet Móvel"
-   ```
-
-2. **Crie um repositório no GitHub:**
-   - Acesse [GitHub](https://github.com)
-   - Clique em "New repository"
-   - Dê um nome ao repositório (ex: "pet-movel")
-   - Não inicialize com README, .gitignore ou licença
-   - Clique em "Create repository"
-
-3. **Conecte o repositório local ao remoto:**
-   ```sh
-   git remote add origin https://github.com/MrEvan3/pet-movel.git
-   git branch -M main
-   git push -u origin main
-   ```
-
-4. **Para atualizações futuras:**
-   ```sh
-   git add .
-   git commit -m "Descrição das alterações"
-   git push origin main
-   ```
-
----
-
-## Principais decisões de código
-
-### Semântica
-- Utilização de tags semânticas do HTML5 como `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`, `<button>`, `<ul>`, `<li>`, para garantir melhor estruturação do conteúdo e facilitar a navegação por leitores de tela.
-
-### Acessibilidade
-- Inclusão de atributos `alt` descritivos em todas as imagens.
-- Contraste adequado entre texto e fundo.
-- Navegação por teclado garantida em menus e botões.
-- Uso de fontes legíveis e tamanhos adequados.
-
-### Responsividade
-- Adaptação do layout para diferentes tamanhos de tela usando CSS responsivo (media queries) e/ou utilitários do Tailwind CSS.
-- Garantia de boa visualização tanto em desktop quanto em dispositivos móveis.
-
----
-
-## Créditos
-
-Protótipo desenvolvido no Figma por Evandro Lemos.
-Desenvolvimento web por Evandro Lemos.
-
----
-
-## Licença
-
-Este projeto é apenas para fins acadêmicos.
-
-## Descrição
-Website desenvolvido para a Pet Móvel, uma empresa de serviços para pets em domicílio. O projeto foi desenvolvido como parte do módulo de desenvolvimento web, utilizando frameworks modernos e boas práticas de programação.
-
-## Créditos
-
-Protótipo desenvolvido no Figma por Evandro Lemos. https://www.figma.com/design/gLjAi2DSjMMRPBXOndyIUx/App-Landing-Page-Pet-shop--Community---Community-?node-id=47-812&t=Kq0YSHjRBYDbN68x-1
-Desenvolvimento web por Evandro Lemos.
-Este projeto é apenas para fins acadêmicos.
-
 ## Tecnologias Utilizadas
 - Next.js 14
 - TypeScript
@@ -130,6 +61,33 @@ Este projeto é apenas para fins acadêmicos.
 - Branches para desenvolvimento de features
 - Documentação atualizada
 
+## Principais decisões de código
+
+### Semântica
+- Utilização de tags semânticas do HTML5 como `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`, `<button>`, `<ul>`, `<li>`, para garantir melhor estruturação do conteúdo e facilitar a navegação por leitores de tela.
+
+### Acessibilidade
+- Inclusão de atributos `alt` descritivos em todas as imagens.
+- Contraste adequado entre texto e fundo.
+- Navegação por teclado garantida em menus e botões.
+- Uso de fontes legíveis e tamanhos adequados.
+
+### Responsividade
+- Adaptação do layout para diferentes tamanhos de tela usando CSS responsivo (media queries) e/ou utilitários do Tailwind CSS.
+- Garantia de boa visualização tanto em desktop quanto em dispositivos móveis.
+
+## Créditos
+
+Protótipo desenvolvido no Figma por Evandro Lemos.
+Desenvolvimento web por Evandro Lemos.
+
+## Licença
+
+Este projeto é apenas para fins acadêmicos.
+
+## Descrição
+Website desenvolvido para a Pet Móvel, uma empresa de serviços para pets em domicílio. O projeto foi desenvolvido como parte do módulo de desenvolvimento web, utilizando frameworks modernos e boas práticas de programação.
+
 ## Funcionalidades
 - Design responsivo
 - Página inicial com seções:
@@ -138,22 +96,6 @@ Este projeto é apenas para fins acadêmicos.
   - Newsletter
   - Cards informativos
   - Rodapé
- 
-> **Atenção:**
-> Para rodar este projeto em outro computador, basta seguir o passo a passo da seção **Como rodar o projeto localmente** abaixo.
-> 
-> **Pré-requisitos:**
-> - Ter o [Node.js](https://nodejs.org/) e o npm instalados na máquina.
-> - Seguir os comandos indicados para clonar, instalar as dependências e rodar o servidor de desenvolvimento.
-
-## Como Executar
-1. Clone o repositório
-```bash
-git clone https://github.com/MrEvan3/pet-movel.git
-```
-
-2. Instale as dependências
-```
 
 > **Atenção:**
 > Para rodar este projeto em outro computador, basta seguir o passo a passo da seção **Como rodar o projeto localmente** abaixo.
@@ -161,21 +103,3 @@ git clone https://github.com/MrEvan3/pet-movel.git
 > **Pré-requisitos:**
 > - Ter o [Node.js](https://nodejs.org/) e o npm instalados na máquina.
 > - Seguir os comandos indicados para clonar, instalar as dependências e rodar o servidor de desenvolvimento.
-
-## Remover submódulo git inválido
-```bash
-git submodule deinit -f pet-movel
-git rm -f pet-movel
-rm -rf .git/modules/pet-movel
-```
-
-## Remover arquivo .gitmodules
-```bash
-rm .gitmodules
-```
-
-## Adicionar e commitar alterações
-```bash
-git add .
-git commit -m "Removendo submódulo git inválido"
-git push origin main
