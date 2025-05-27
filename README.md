@@ -33,8 +33,6 @@ Escolhi o **Next.js** porque é um dos frameworks mais modernos e completos para
 
 ---
 
-<<<<<<< HEAD
-=======
 ## Como publicar no GitHub
 
 1. **Inicie o repositório git (se ainda não fez):**
@@ -66,7 +64,6 @@ Escolhi o **Next.js** porque é um dos frameworks mais modernos e completos para
    ```
 
 ---
->>>>>>> 4c17c9f (Primeira versão do Pet Móvel)
 
 ## Principais decisões de código
 
@@ -110,6 +107,28 @@ Este projeto é apenas para fins acadêmicos.
 - TypeScript
 - CSS Modules
 - React
+- Prisma (ORM)
+- PostgreSQL
+- Git/GitHub
+
+## Implementação do Módulo 3
+
+### Banco de Dados
+- **Modelagem**: Utilizando Prisma como ORM com PostgreSQL
+- **Entidades Principais**:
+  - Serviços (consultas, vacinas, etc.)
+  - Horários Disponíveis
+  - Agendamentos
+- **Relacionamentos**:
+  - Serviço -> Agendamento (1:N)
+  - Horário -> Agendamento (1:N)
+- **Operações**: CRUD completo implementado para todas as entidades
+
+### Controle de Versão
+- Repositório organizado no GitHub
+- Commits frequentes com mensagens descritivas
+- Branches para desenvolvimento de features
+- Documentação atualizada
 
 ## Funcionalidades
 - Design responsivo
@@ -127,7 +146,6 @@ Este projeto é apenas para fins acadêmicos.
 > - Ter o [Node.js](https://nodejs.org/) e o npm instalados na máquina.
 > - Seguir os comandos indicados para clonar, instalar as dependências e rodar o servidor de desenvolvimento.
 
-
 ## Como Executar
 1. Clone o repositório
 ```bash
@@ -143,8 +161,6 @@ git clone https://github.com/MrEvan3/pet-movel.git
 > **Pré-requisitos:**
 > - Ter o [Node.js](https://nodejs.org/) e o npm instalados na máquina.
 > - Seguir os comandos indicados para clonar, instalar as dependências e rodar o servidor de desenvolvimento.
-<<<<<<< HEAD
-=======
 
 ## Remover submódulo git inválido
 ```bash
@@ -163,4 +179,3 @@ rm .gitmodules
 git add .
 git commit -m "Removendo submódulo git inválido"
 git push origin main
->>>>>>> 4c17c9f (Primeira versão do Pet Móvel)
