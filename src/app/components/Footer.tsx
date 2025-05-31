@@ -36,8 +36,6 @@ export default function Footer() {
                 fontSize: '1rem',
                 cursor: 'pointer',
                 marginBottom: '8px',
-                outline: '2px solid #2d2fa3',
-                outlineOffset: '2px',
               }}>
                 Entre em contato:
               </button>
@@ -80,8 +78,8 @@ export default function Footer() {
           </div>
           <nav aria-label="Políticas do site">
             <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '18px', justifyContent: 'center', listStyle: 'none', padding: 0, margin: 0 }}>
-              <li><a href="#" style={{ color: '#2d2fa3', textDecoration: 'underline', outline: '2px solid #2d2fa3', outlineOffset: '2px' }}>Política de Privacidade</a></li>
-              <li><a href="#" style={{ color: '#2d2fa3', textDecoration: 'underline', outline: '2px solid #2d2fa3', outlineOffset: '2px' }}>Política de Cookies</a></li>
+              <li><a href="#" style={{ color: '#2d2fa3', textDecoration: 'underline' }}>Política de Privacidade</a></li>
+              <li><a href="#" style={{ color: '#2d2fa3', textDecoration: 'underline' }}>Política de Cookies</a></li>
             </ul>
           </nav>
         </div>

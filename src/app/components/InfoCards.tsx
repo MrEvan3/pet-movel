@@ -1,4 +1,6 @@
+'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function InfoCards() {
   return (
@@ -46,21 +48,21 @@ export default function InfoCards() {
             }}>
               Encontre nosso ônibus no bairro mais próximo de você! Acompanhe a localização em tempo real e saiba onde estamos atendendo hoje
             </p>
-            <button style={{
-              background: '#ffc72c',
-              color: '#2d2fa3',
-              border: 'none',
-              borderRadius: '8px',
-              padding: '10px 28px',
-              fontFamily: 'Open Sans, sans-serif',
-              fontWeight: 700,
-              fontSize: '1rem',
-              cursor: 'pointer',
-              outline: '2px solid #2d2fa3',
-              outlineOffset: '2px',
-            }}>
-              Saiba Mais
-            </button>
+            <Link href="/localizacao" passHref legacyBehavior>
+              <button style={{
+                background: '#ffc72c',
+                color: '#2d2fa3',
+                border: 'none',
+                borderRadius: '8px',
+                padding: '10px 28px',
+                fontFamily: 'Open Sans, sans-serif',
+                fontWeight: 700,
+                fontSize: '1rem',
+                cursor: 'pointer',
+              }}>
+                Saiba Mais
+              </button>
+            </Link>
           </div>
           <div style={{ flex: 1, minWidth: '220px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <Image src="/assets/onibus.png" alt="Ônibus ilustrativo do projeto Pet Móvel" width={420} height={200} style={{ borderRadius: '12px', maxWidth: '100%', height: 'auto' }} />
@@ -108,8 +110,6 @@ export default function InfoCards() {
               fontWeight: 700,
               fontSize: '1rem',
               cursor: 'pointer',
-              outline: '2px solid #2d2fa3',
-              outlineOffset: '2px',
             }}>
               Saiba Mais
             </button>

@@ -110,8 +110,6 @@ export default function Newsletter() {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              outline: '2px solid #2d2fa3',
-              outlineOffset: '2px',
             }}>
               <span style={{ fontSize: '1.3rem', marginRight: '4px' }}>➔</span>
             </button>
