@@ -15,7 +15,7 @@ export default function Footer() {
           {/* Logo e contato */}
           <div style={{ minWidth: '220px', flex: 1 }}>
             <div style={{ marginBottom: '18px' }}>
-              <span style={{
+              <span data-testid="footer-title" style={{
                 fontFamily: 'Paytone One, sans-serif',
                 fontSize: '2rem',
                 color: '#222',

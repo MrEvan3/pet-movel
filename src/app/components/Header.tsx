@@ -22,7 +22,7 @@ export default function Header() {
         height: '90px',
       }}>
         <Link href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
-          <span style={{
+          <span data-testid="header-title" style={{
             fontFamily: 'Paytone One, sans-serif',
             fontSize: '2.2rem',
             color: '#fff',
